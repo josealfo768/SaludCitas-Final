@@ -1,1 +1,0 @@
-﻿SELECT MedicoId, Nombres, Apellidos, EspecialidadId, Activo FROM dbo.Medicos WHERE MedicoId >= 9;
