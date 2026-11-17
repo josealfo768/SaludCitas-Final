@@ -1,0 +1,19 @@
+@host = https://localhost:7101
+
+### 1. Login administrador (debe dar 200 con un token)
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "correo": "admin@saludcitas.com",
+  "clave": "Admin123"
+}
+
+### 2. Login con clave incorrecta (debe dar 401)
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "correo": "admin@saludcitas.com",
+  "clave": "incorrecta"
+}
